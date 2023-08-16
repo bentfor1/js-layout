@@ -1,7 +1,8 @@
 import {
   createElement,
   createHeader,
-  createPost,
+  createNav,
+  createHero,
   createStatusbar,
 } from '../../script/layout'
 
@@ -11,10 +12,12 @@ const statusBar = createStatusbar()
 
 const header = createHeader()
 
-const title = createElement('h1', 'title', 'Мій блог')
+const title = createElement('h1', 'title', 'Коммьюніті')
 
-const post = createPost()
+const nav = createNav()
+
+const hero = createHero()
 
 const line = createElement('div', 'footer-line')
 
-page.append(statusBar, header, title, post, line)
+page.append(statusBar, header, title, nav, hero, line)
